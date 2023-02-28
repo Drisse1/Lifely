@@ -1,0 +1,314 @@
+/* start global */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.clearfix { clear: both;}
+
+.container {width:1200px;margin:auto;}
+
+h2, h3, h4 {font-weight: normal}
+
+ul {list-style: none;padding: 0;margin: 0;}
+/* end global */
+
+/* start navbar */
+.navbar {font-size: 18px;height: 0;color: #FFF;position: relative;z-index: 2;}
+
+.navbar .brand {width: 50%;text-transform: uppercase;margin-top: 10px}
+
+.navbar .links {width: 50%;margin-top: 25px;text-align: right;}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 0px;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar .links li a {color: #FFF;text-decoration: none;cursor: pointer;}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {color: #1abc9c;}
+
+.navbar .links li.active,
+.navbar .links li:hover {border-bottom: 3px solid #1abc9c}
+/* end navbar */
+
+/* start header */
+.header {
+    background-image: url(../images/headerimage.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+.header .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    z-index: 1;
+}
+
+.header .bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center;
+}
+.header .bx-wrapper .bx-viewport,
+.header .bx-wrapper .bx-viewport ul {height: 100% !important}
+
+.header .bx-wrapper .bx-viewport ul li {display: block;}
+
+.header .slider li h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.header .slider li h2 span {color: #1abc9c;}
+/* end header */
+
+/* start services */
+.services {padding: 80px 20px 40px;}
+
+.services h2 {margin: 0 0 50px;}
+
+.services .item {float: left;width: 33.33333%;margin-bottom: 20px;}
+
+.services .item i {
+    color: #1abc9c;
+    float: left;
+    width: 20%;
+    margin-right:  5%;
+    margin-top: 20px;
+}
+
+.services .item .info {float: left;width: 70%;}
+
+.services .item .info h3 {color: #585353;margin-bottom: 10px;}
+
+.services .item .info p {margin-top: 0px;color: #888;}
+
+.our-team {padding: 40px 20px;}
+
+.our-team .box:first-child {width: 35%;}
+
+.our-team .box:not(:first-child) {width: 15.25%;margin-left: 1%;position: relative;}
+
+.our-team .box:not(:first-child) .overlay {line-height: 200px;}
+
+.our-team .box:not(:first-child):hover .overlay {display: block;}
+
+.our-team .box:not(:first-child) img {width: 100%;}
+
+.our-team h2 {padding: 0 0 15px;}
+
+.our-team .box p {line-height: 1.4;color: #888;font-size: 14px;}
+/* end services */
+
+/* start testimonials */
+.testim {
+    background-image: url(../images/testim.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.testim .t-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.testim h2 {margin-top: 100px;}
+
+.testim h2 span {padding-bottom: 15px;border-bottom: 3px solid #1abc9c;}
+
+.testim .sldr > div {display: none;}
+
+.testim .sldr .active {display: block;}
+
+.testim q {
+    font-size: 20px;
+    line-height: 2;
+    color: #D0D0D0;
+    display: block;
+    margin-top: 60px;
+}
+
+.testim p {font-size: 30px;color: #1abc9c;}
+/* end testimonials */
+
+/* start our project */
+.our-project {padding: 80px 0;}
+
+.our-project ul {margin-top: 50px;}
+
+.our-project ul li {
+    display: inline-block;
+    border: 2px solid #D4CCCC;
+    color: #A7A7A7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.our-project ul li.selected,
+.our-project ul li:hover {border: 2px solid #1abc9c;background-color: #1abc9c;color: #FFF;}
+
+.our-project .gallery {margin-top: 50px;overflow: hidden;}
+
+.our-project .gallery .row > div:nth-child(2) {margin-right: 1%;margin-left: 1%;}
+
+.our-project .gallery .row > div {
+    width: 32.6666%;
+    float: left;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.our-project .gallery .row > div .over {line-height: 232px;}
+
+.our-project .gallery .row > div .over span {border: 2px solid #EEE;padding: 10px 20px;}
+
+.our-project .gallery .row > div .heart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #FFF;
+    display: none;
+}
+
+.our-project .gallery .row > div:hover .over,
+.our-project .gallery .row > div:hover .heart {display: block;}
+
+.our-project .gallery .row > div img {width: 100%}
+
+.our-project .gallery .row .mix {display: none;}
+/* end our project */
+
+/* start footer */
+.footer {
+    background-color: #232323;
+    color: #6C6C6C;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.footer .col {width: 25%;}
+
+.footer .col h2 {color: #EEE;font-size: 18px;}
+
+.footer .col p {line-height: 1.6;margin-bottom: 30px;margin-top: 30px;}
+
+.footer .col i {
+    display: inline-block;
+    padding: 17px 10px;
+    color: #CCC;
+    border: 1px solid #979797;
+    width: 40px;
+    cursor: pointer;
+}
+
+.footer .tags span {
+    display: inline-block;
+    padding: 10px;
+    color: #CCC;
+    border: 1px solid #979797;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    cursor: default;
+}
+
+.footer .recent div {overflow: hidden;margin-bottom: 10px}
+
+.footer .recent div img {float: left;margin-right: 10px;}
+
+.footer .recent div h4 {color: #CCC;margin: 8px 0;}
+
+.footer .blog ul li {padding: 15px 0;border-bottom: 1px solid #979797;color: #CCC;}
+
+.footer .copyright {margin-top: 30px;}
+/* end footer */
+
+/* start to top */
+.up {
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #1abc9c;
+    color: #EEE;
+    border: 2px solid #1abc9c;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+/* .up:hover {
+    background-color: #1abc9c;
+    color: #EEE;
+} */
+/* end to top */
+
+/* start my framework */
+.fl-left {float: left}
+
+.special-heading {position: relative;}
+
+.special-heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40px;
+    border-bottom: 3px solid #1abc9c;
+}
+
+.separator {border: 1px solid #EEE;}
+
+.overlay-gen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 188, 156, .7);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFF;
+    display: none;
+}
+/* end my framework */
